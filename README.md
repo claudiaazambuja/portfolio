@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# Projeto React com Mantine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto básico utilizando **React** e **Mantine** para criar uma aplicação com componentes da biblioteca Mantine e navegação entre páginas usando `react-router-dom`.
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A estrutura básica do projeto é a seguinte:
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Como Começar
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Requisitos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Node.js (versão 20 ou superior)
+- npm (ou yarn)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Passos para Configuração
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Clone este repositório** para o seu computador:
+    ```bash
+    git clone https://github.com/username/projeto-mantine.git
+    ```
+
+2. **Instale as dependências** do projeto:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+3. **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
+
+4. Abra seu navegador e vá para `http://localhost:3000` para ver a aplicação em execução.
+
+## Componentes
+
+- **Home.tsx**
+- **About.tsx**
+- **Contact.tsx**
+- **Skills.tsx**
+- **Testimonials.tsx**
+
+## Estilo
+
+Este projeto usa o **Mantine** para componentes UI. O Mantine é uma biblioteca de componentes React que fornece uma ampla gama de componentes prontos para uso, como `Text`, `Button`, `Container`, entre outros.
+
+## Scripts
+
+- `npm start` ou `yarn start`: Inicia o servidor de desenvolvimento.
+- `npm run build` ou `yarn build`: Cria uma versão otimizada para produção.
+- `npm test` ou `yarn test`: Executa os testes.
+- `npm run eject` ou `yarn eject`: Ejecta a configuração do projeto (não recomendado para iniciantes).
+
+
+## Licença
+
+Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
